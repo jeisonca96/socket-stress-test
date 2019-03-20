@@ -1,0 +1,17 @@
+{
+  "name": "socket-stress-test",
+  "version": "1.0.0",
+  "description": "stress test colyseus and socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeison Aparicio",
+  "license": "ISC",
+  "dependencies": {
+    "cli": "^1.0.1",
+    "colyseus.js": "^0.9.16",
+    "socket.io-client": "^2.2.0",
+    "yargs": "^13.2.2"
+  }
+}
