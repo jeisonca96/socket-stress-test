@@ -22,8 +22,8 @@ let getInfo = () => {
             case "io":
                 ioConnection(connections_socket, host_socket)
                 
-                let timeFinal = new Date()
-                let subTime = date.subtract(timeFinal, timeInitial).toMilliseconds();
+                var timeFinal = new Date()
+                var subTime = date.subtract(timeFinal, timeInitial).toMilliseconds();
 
                 console.log(`End ${connections_socket} conections in ${type_socket} in ${subTime} Milliseconds`)
 
@@ -32,8 +32,8 @@ let getInfo = () => {
             case "colyseus":
                 colyseusConnection(connections_socket, host_socket)
 
-                let timeFinal = new Date()
-                let subTime = date.subtract(timeFinal, timeInitial).toMilliseconds();
+                var timeFinal = new Date()
+                var subTime = date.subtract(timeFinal, timeInitial).toMilliseconds();
 
                 console.log(`End ${connections_socket} conections in ${type_socket} in ${subTime} Milliseconds`)
 
@@ -70,10 +70,10 @@ let colyseusConnection = (connections_socket, host_socket) => {
             nickname: "ELMASTER"
         });
 
-        room.onJoin.add(() => {
-            var msg = 'Conectado colyseus'
-            cli.debug(`Connection #${i}: ${msg}`)
-        });
+        var msg = 'Conectado colyseus'
+        cli.debug(`Connection #${i}: ${msg}`)
+        // room.onJoin.add(() => {
+        // });
     }
 }
 
